@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1240px;
+    margin: auto;
+}
+
+/* header-banner */
+.header-banner {
+    background-image: url("./photo-1471879832106-c7ab9e0cee23.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 250px;
+}
+
+.header {
+    padding: 10px 200px;
+}
+
+.header .picture {
+    display: inline-block;
+    width: 40%;
+}
+
+.header .picture img {
+    width: 150px;
+    height: auto;
+}
+
+.header .menu {
+    width: 59%;
+    display: inline-block;
+    text-align: center;
+}
+
+.header .menu ul {
+}
+
+.header .menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.header .menu ul li:hover > a {
+    color: #fa7248;
+    transition: 0.5s;
+}
+
+/* sub-menu */
+.header .menu ul li {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+.sub-menu li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    top: 0%;
+    right: 30%;
+    width: 100%;
+}
+
+.sub-menu li:hover {
+    color: #fa7248;
+    transition: 0.5s;
+}
+
+.sub-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .menu ul li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu li::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-weight: 600px;
+}
+
+/* sub-menu */
+
+.banner {
+    text-align: center;
+    padding-top: 160px;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    padding: 25px 0px;
+    position: relative;
+}
+
+.banner h1::before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+}
+
+.banner h1::after {
+    content: "\f10e";
+    font-family: FOntAwesome;
+    position: absolute;
+    bottom: 44%;
+    left: 72%;
+}
+
+/* header-banner-finish */
+
+/* about */
+.about {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.about .picture {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+.about .picture img {
+    width: 300px;
+}
+
+.about .para {
+    display: inline-block;
+    width: 59%;
+    text-align: left;
+}
+
+.about .para h1 {
+    font-size: 40px;
+}
+
+.about .para p {
+    padding: 30px;
+    line-height: 21px;
+}
+
+/* about-finish */
+
+/* service */
+.service-section {
+    background-color: #2d3e4e;
+
+    position: relative;
+}
+
+.service-section h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0px;
+    color: #fb7151;
+}
+
+.service-section .service {
+    display: inline-block;
+    text-align: center;
+
+    margin-bottom: 50px;
+    position: relative;
+    width: 33%;
+}
+
+.service-section .service i {
+    color: white;
+    background-color: #fb7151;
+    font-size: 25px;
+    padding: 25px 25px;
+    border-radius: 5px 30px 5px 30px;
+}
+
+.service-section .service h2 {
+    color: white;
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.service-section .service .ulli {
+    line-height: 35px;
+    color: white;
+    font-size: 25px;
+    list-style: none;
+}
+
+.service-section .service button {
+    padding: 15px 30px;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 25px;
+    background-color: #fb7151;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-section .service .ulli li::before {
+    content: "\f560";
+    font-family: FontAwesome;
+    font-weight: 600px;
+}
+
+.service-section .service button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: #ffee00;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.service-section .service button:hover::before {
+    width: 100%;
+}
+
+/* service-finish */
+
+/* submit */
+.submit {
+    text-align: center;
+    padding: 250px 0px;
+    position: relative;
+}
+
+.submit h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+
+.submit .text {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    font-size: 25px;
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid red;
+}
+
+.submit .email {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 25px;
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid red;
+}
+
+.submit .number {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    font-size: 25px;
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid red;
+}
+
+.submit button {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    padding: 10px 100px;
+    font-size: 28px;
+    border: none;
+    background-color: #fb7151;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.submit button::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(141, 51, 51);
+    border-radius: 10px 0px 0px 10px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.submit button::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: rgb(199, 77, 77);
+    border-radius: 0px 10px 10px 0px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.submit button:hover::before{
+    width: 50%;
+}
+
+.submit button:hover::after{
+    width: 50%;
+}
+
+/* submit-finish */
+
+/* footer */
+.footer{
+    background-color: #2d3e4e;
+    padding: 30px 0px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+/* footer-finish */
